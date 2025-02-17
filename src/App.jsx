@@ -20,7 +20,7 @@ function App() {
   const endpoint = useMemo(() => clusterApiUrl(network), [network]);
 
   return (
-      <ConnectionProvider endpoint={endpoint}>
+      <ConnectionProvider endpoint={"https://solana-devnet.g.alchemy.com/v2/4e4pAIR3-DdxKSgVTJgnEZ_QR4d-qTaU"}>
       {/* <ConnectionProvider endpoint={"https://api.devnet.solana.com"}> */}
           <WalletProvider wallets={[]} autoConnect>
               <WalletModalProvider>
